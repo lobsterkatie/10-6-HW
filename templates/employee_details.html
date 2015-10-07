@@ -15,10 +15,12 @@
         <div class="container">
             <div id="employee-details">
                 <h1>{{ details['name'] }}</h1>
-                <h3> details['position'] </h3>
+                <h3> {{ details['position'] }} </h3>
                 <ul>
-                    <li>E-Mail: {{  details['favorite_food'] }}</li>
-                    <li>Favorite Food: {{ details['email'] }} </li>
+                    <li>Favorite food: {{  details['favorite_food'] }}</li>
+                    <li>Email: 
+                        <a href="mailto:{{ details['email'] }}">{{ details['email'] }}</a>
+                    </li>
                 </ul>
             </div>
         </div>
